@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+  <head>
+    <script data-require="angular.js@*" data-semver="1.4.0-beta.5" src="https://code.angularjs.org/1.4.0-beta.5/angular.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <h2>Chapter 4: <code>$scope</code> hierachy</h2>
+      <ul>
+        <li>$rootScope.name="World"</li>
+        <li>$scope.name="Faith Kangai"</li>
+      </ul>
+      
+      <h4>Hello {{ name }}!</h4>
+      The $rootScope says hello.
+      
+      <div ng-controller="MyController">
+  
+        <h3>The $rootScope does not apply below since its child $scope in "MyController" owns this territory".</h3>
+         <h4>Hello {{ name }}!</h4>
+         <p>NB:if $scope.name wasnt explicitly declared then it would inherit the <code>name</code> attribute from the parent i.e from $rootScope</p>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+  </body>
+
+</html>

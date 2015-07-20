@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>factory</title>
+</head>
+<body ng-controller="myController">
+   <div>
+       {{greetings}}
+   </div>
+   <div>
+       <h1>{{stuff.name}}</h1>
+       <p ng-bind="stuff.message"></p>
+   </div>
+
+
+    <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="./factory.js"></script>
+</body>
+</html>

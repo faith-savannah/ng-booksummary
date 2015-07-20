@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+  <head>
+    <script data-require="angular.js@*" data-semver="1.4.0-beta.5" src="https://code.angularjs.org/1.4.0-beta.5/angular.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <h2>Chapter 5: Controllers</h2>
+      <ul>
+        <li>The controller function <em>adds additional functionality</em> to the scope of the
+view.</li>
+        <li>can set up an <strong>initial state</strong> and also adds <strong>custom behavior</strong> to the scope object.</li>
+      </ul>
+      <h4>Example: addition and subtraction functionality as below</h4>
+        <div ng-controller="ArithmeticController">
+          current count:  {{ counter}}<br/>
+          <button ng-click="add(1)" class="button">Add</button>
+          <button ng-click="subtract(1)" class="button alert">Subtract</button>
+        </div>
+      <h4>Controller Hierachy(nested controllers creating scopes within scopes)</h4>
+        <ul>
+          <li>With the exception of isolate scopes(A scope created inside of a directive e.g ng-repeat), all scopes are created with prototypal inheritance, meaning
+that they have access to their parent scopes</li>
+        </ul>
+      <p>NB: keep controllers as slim as possible</p>
+
+      
+     
+    </div>
+    
+    <script src="script.js"></script>
+    
+  </body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+  <head>
+    <script data-require="angular.js@*" data-semver="1.4.0-beta.5" src="https://code.angularjs.org/1.4.0-beta.5/angular.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div ng-controller="MyController">
+      <h1>Chapter 1</h1>
+      <input ng-model="name" type="text" placeholder="Your name">
+      <h2>Hello {{ name }}!</h2>
+      <p>The time right now is {{ clock.now }}</p>
+      <h5>Author's Age: {{ age }} old</h5>
+      
+    </div>
+    
+    <script src="script.js"></script>
+    
+  </body>
+
+</html>
