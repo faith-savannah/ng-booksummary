@@ -1,0 +1,30 @@
+<doctype html>
+<html ng-app="myApp">
+  <head lang="en">
+      <title>digest loop & $apply</title>
+      <link rel="stylesheet" type="text/css" href="./applying.css">
+  </head>
+  <body>
+    <h1>Course: digest loop & $apply</h1>
+      <div class="well" ng-controller="OuterCtrl">
+      <h3>Outer:{{ time |heavy}}</h3>
+
+        <div class="well" ng-controller="MiddleCtrl">
+        <h3>Middle:{{ time }}</h3>
+
+            <div class="well" ng-controller="InnerCtrl">
+            <h3>Inner:{{ time }}</h3>
+
+            <digest-button></digest-button>
+            <apply-button></apply-button>
+               
+             </div>
+           </div>
+      </div>
+    <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="../bower_components/moment/moment.js"></script>
+    <script type="text/javascript" src="../bower_components/tinycolor/tinycolor.js"></script>      
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script type="text/javascript" src="./applying.js"></script>
+  </body>
+</html>

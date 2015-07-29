@@ -1,0 +1,17 @@
+.toggleMe.ng-enter, .toggleMe.ng-leave {
+  transition:0.5s linear all;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+}
+.toggleMe.ng-enter {
+  transform:translateX(100%);
+}
+.toggleMe.ng-leave,
+.toggleMe.ng-enter.ng-enter-active {
+  transform:translateX(0%);
+}
+.toggleMe.ng-leave.ng-leave-active {
+  transform:translateX(-100%);
+}

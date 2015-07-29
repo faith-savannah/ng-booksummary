@@ -1,0 +1,16 @@
+<doctype html>
+<html ng-app="myApp">
+  <head lang="en">
+      <title>Angular Animations</title>
+  </head>
+  <body>
+    <h1>Course: angular animations</h1>
+      <div ng-controller="MyController">
+           <button class="btn" ng-click="toggle=!toggle">TOGGLE ANIMATION</button>
+           <div class="toggleMe" ng-if="toggle">This will be animated</div>
+      </div>
+    <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-animate/angular-animate.js"></script>   
+    <script type="text/javascript" src="./animation.js"></script>
+  </body>
+</html>
