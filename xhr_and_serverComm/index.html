@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="fragment" content="!"/>
+    <title>My ng-book App</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="routes.js"></script>
+    <script src="controller.js"></script>
+</head>
+<body>
+<h1>XHR</h1>
+<div class="container ">
+
+    <div ng-controller="ServiceController">
+        <label for="username">GitHub username</label><br/>
+        <input id="username" type="text" ng-model="username" placeholder="Enter a GitHub username"/>
+        <pre ng-show="username">{{ events }}</pre>
+    </div>
+</div>
+
+</body>
+</html>
